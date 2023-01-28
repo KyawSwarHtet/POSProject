@@ -14,7 +14,7 @@ const CartPages = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   // const API_URL = "http://localhost:5000";
-  const API_URL = "https://kshpos.onrender.com";
+  const API_URL = "https://kshpos.onrender.com/";
   const { cartItems } = useSelector((state) => state.rootReducer);
   const [subTotal, setSubTotal] = useState(0);
   const [billPopup, setBillPopup] = useState(false);
@@ -122,7 +122,7 @@ const CartPages = () => {
       console.log("new obj", newObject);
 
       await axios
-        .post(`${API_URL}/api/addbills`, newObject)
+        .post(`${API_URL}api/addbills`, newObject)
         .then(() => navigate("/bills"));
     } catch (error) {
       message.error("Something wrong during Generate bills");
