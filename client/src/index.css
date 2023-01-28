@@ -1,0 +1,124 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sora:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Sora", sans-serif;
+}
+a {
+  text-decoration: none !important;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.spinner-border {
+  height: 60px;
+  width: 60px;
+}
+
+.item-button button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgb(11 135 11);
+  color: white;
+}
+
+.item-button button:hover {
+  background-color: rgb(223, 231, 223);
+  color: rgb(14, 13, 13) !important;
+  font-weight: 600;
+}
+.f-h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.itemSize {
+  font-size: 1rem;
+}
+.deleteItem {
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  color: rgb(190, 28, 28);
+}
+.editItem {
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  color: rgb(36 114 26);
+}
+.quantityItem {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.category {
+  border: 2px solid gray;
+  margin: 0 25px 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.category h4 {
+  line-height: 1.6;
+}
+.category img {
+  margin-left: 10px;
+}
+
+.category-active {
+  border: 2px solid #3bb19b;
+  background-color: rgb(173 230 212 / 50%);
+}
+.cateTitle {
+  margin: 1rem 0 2rem 4rem;
+  justify-content: flex-start;
+}
+
+/* =========Register Page========== */
+
+.register {
+  display: flex;
+  border: 1px solid gray;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  outline: 1px solid black !important;
+}
+
+.register-form {
+  background-color: #29509561;
+  padding: 2.4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.register-form h1 {
+  text-align: center;
+  background-color: #1e1bcba3;
+  color: white;
+  padding: 10px;
+}
+
+.register-form h3 {
+  color: #2727aee8;
+  text-align: center;
+  padding: 10px;
+}
+
+.register input {
+  width: 400px !important;
+}
